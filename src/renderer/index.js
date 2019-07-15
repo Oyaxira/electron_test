@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import MainContainer from './component/main_container'
 
 ReactDOM.render(
-  <div>asdasdasd</div>,
+  <MainContainer/>,
   document.getElementById('app')
 )
