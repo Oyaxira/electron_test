@@ -1,6 +1,7 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
+  "author": "luziyi",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -21,7 +22,8 @@
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder"
+    "dist": "yarn compile && electron-builder -mw",
+    "dist_win": "electron-builder install-app-deps"
   },
   "devDependencies": {
     "electron": "^5.0.6",
