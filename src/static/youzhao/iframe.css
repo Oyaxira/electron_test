@@ -1,0 +1,76 @@
+.bluebuck-frame.open {
+    transform: translateX(0px);
+}
+
+.bluebuck-frame {
+    background-color: rgb(249, 249, 249);
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 2147483647;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-bottom-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    transform: translateX(410px);
+    border-style: none none none solid;
+    border-image: initial;
+    border-left: 2px solid rgb(220, 220, 220);
+    transition: transform 0.3s;
+    box-sizing: content-box;
+}
+
+.bluebuck-float-windows {
+    background: white;
+    position: fixed;
+    top: 50px;
+    z-index: 99999;
+    right: 50px;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    border-left: 4px solid #50C286;
+}
+
+.bluebuck-float-windows .wintitle {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.bluebuck-float-windows .wintitle .text {
+    position: absolute;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    left: 68px;
+    top: 30px;
+    line-height: 20px;
+}
+
+.bluebuck-float-windows .wintitle .imgs {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 20px;
+    top: 26px;
+}
+
+.bluebuck-float-windows .wintitle .closeX {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: #FFF;
+    color: black;
+    cursor: pointer;
+    z-index: 999999;
+    font-size: 20px;
+    /*font-weight: bold;*/
+}

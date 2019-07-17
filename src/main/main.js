@@ -10,21 +10,28 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let mainWindow
 
 function createMainWindow() {
-  const window = new BrowserWindow({webPreferences: {nodeIntegration: true}})
-
+  BrowserWindow.addExtension(path.join(__static, '/youzhao/'))
+  const window = new BrowserWindow(
+    {
+      webPreferences: {nodeIntegration: false},
+      plugins: true
+    }
+    )
   if (isDevelopment) {
     window.webContents.openDevTools()
   }
 
   if (isDevelopment) {
-    window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
+    // window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
+    window.loadURL("https://youzhao.io/sign_in/")
   }
   else {
-    window.loadURL(formatUrl({
-      pathname: path.join(__dirname, 'index.html'),
-      protocol: 'file',
-      slashes: true
-    }))
+    // window.loadURL(formatUrl({
+    //   pathname: path.join(__dirname, 'index.html'),
+    //   protocol: 'file',
+    //   slashes: true
+    // }))
+    window.loadURL("https://youzhao.io/sign_in/")
   }
 
   window.on('closed', () => {

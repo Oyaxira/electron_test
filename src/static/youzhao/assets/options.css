@@ -1,0 +1,10 @@
+
+
+#option-body {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  overflow: auto;
+  padding: 20px;
+  word-break: break-all;
+}
